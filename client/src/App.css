@@ -1,0 +1,133 @@
+
+.login-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+.signup-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+.card {
+    
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+/* display product */
+.display-menu {
+    padding: 20px;
+    background: #f8f9fa; /* Light background for contrast */
+}
+
+.menu-container {
+    margin-bottom: 40px;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.scroll-container {
+    overflow-x: auto; /* Allows horizontal scrolling */
+    padding: 10px;
+}
+
+.product-wrapper {
+    flex: 0 0 200px; /* Set fixed width */
+    margin-right: 15px; /* Spacing between items */
+    margin-bottom: 15px; /* Spacing below items */
+    border: 1px solid #dee2e6; /* Light border around product */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff; /* White background for product */
+    transition: transform 0.3s; /* Smooth transition effect */
+}
+
+.product-wrapper:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.product-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Rounded corners for the image */
+}
+
+
+
+
+/* carousel */
+.carousel {
+    margin: 0 auto; /* Center the carousel */
+}
+
+.carousel-inner {
+    border-radius: 10px;
+ /* Optional: round corners */
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 30vh; /* Reduce height on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        height: 25vh; /* Further reduce height for extra small screens */
+    }
+}
+.carousel-inner, .carousel-item {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+

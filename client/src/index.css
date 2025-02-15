@@ -1,0 +1,20 @@
+.scroll-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow-x: auto;  
+}
+.scroll-container::-webkit-scrollbar {
+    display: none; 
+}
+.scroll-container > div {
+    flex: 0 0 auto;
+}
+.item-card{
+    box-shadow: 0 0 3px 1px #000;
+    transition: all 0.2s;
+}
+.item-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 0 8px 1px #000;
+
+}
